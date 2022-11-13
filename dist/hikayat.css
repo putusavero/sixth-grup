@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+.banner-hikayat{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("../../gambar/bg.jpg");
+    background-size: cover;
+}
+.banner-hikayat .content{
+    max-width: 900px;
+    text-align: center;
+}
+.banner-hikayat .content h2{
+    font-size: 5em;
+    color: black;
+}
+.btn{
+    font-size: 1em;
+    color: aliceblue;
+    background: #ff0157;
+    display: inline-block;
+    padding: 10px 30px;
+    margin-top: 20px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+}
+.btn:hover{
+    letter-spacing: 4px;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 10000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+}
+
+header.sticky{
+    background: aliceblue;
+    padding: 10px 100px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+header .logo-hikayat{
+    color: aliceblue;
+    font-weight: 700;
+    font-size: 2em;
+    text-decoration: none;
+}
+header.sticky .logo-hikayat{
+    color: #111;
+}
+header .logo-hikayat span{
+    color: #ff0157;
+}
+header .navigation-hikayat{
+    position: relative;
+    display: flex;
+}
+header .navigation-hikayat li{
+    list-style: none;
+    margin-left: 30px;
+}
+header .navigation-hikayat li a{
+    text-decoration: none;
+    color: aliceblue;
+    font-weight: 300;
+}
+header.sticky .navigation-hikayat li a{
+    color: black;
+}
+header .navigation-hikayat li a:hover{
+    color: #ff0157;
+}
+
+/*tentang hikayat*/
+.resume .container ul h2{
+    margin-top: 50px;
+    margin-left: 15px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+
+.resume .container ul li{
+    margin: 30px;
+}
+
+.resume .container ul li p{
+    text-align: justify;
+}
+
+.resume .container ul{
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+.resume .container .timeline h2 span{
+    font-size: 48px;
+    color: #ff0157;
+}
+
+.resume .container .timeline .ciriciri tr td ul{
+    margin-left: 10px;
+    margin-right: 5px;
+}
+
+.resume .container .timeline .ciriciri tr td ul li{
+    margin: 10px;
+}
+
+.resume .container .timeline .Karakteristik tr td ul{
+    margin-left: 10px;
+    margin-right: 5px;
+}
+
+.resume .container .timeline .Karakteristik tr td ul li{
+    margin: 10px;
+}
+
+.resume .container .timeline .bentuk{
+    text-align: justify;
+}
+
+.resume .container .timeline .bentuk tr td ul{
+    
+    margin-left: 10px;
+    margin-right: 5px;
+}
+
+.resume .container .timeline .bentuk tr td ul li{
+    text-align: justify;
+    margin: 10px;
+}
+
+.resume .container .timeline .jenisjenis{
+    text-align: justify;
+}
+
+.resume .container .timeline .jenisjenis tr td ul{
+    
+    margin-left: 10px;
+    margin-right: 5px;
+}
+
+.resume .container .timeline .jenisjenis tr td ul li{
+    text-align: justify;
+    margin: 10px;
+}
+
+.resume .container .timeline .jenisjenis2{
+    text-align: justify;
+}
+
+.resume .container .timeline .jenisjenis2 tr td ul{
+    margin-left: 10px;
+    margin-right: 5px;
+}
+
+.resume .container .timeline .jenisjenis2 tr td ul li{
+    margin: 10px;
+}   
+
+@media (max-width: 991px){
+    header,
+    header.sticky{
+        padding: 10px 20px;
+    }
+    header .navigation-hikayat{
+        display: none;
+    }
+    header .navigation-hikayat.active{
+        width: 100%;
+        height: calc(100% - 68px);
+        position: fixed;
+        top: 68px;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: aliceblue;
+    }
+    header .navigation-hikayat li{
+        margin-left: 0;
+    }
+    header .navigation-hikayat li a{
+        color: #111;
+        font-size: 1.6em;
+    }
+    .menuToggle{
+        position: relative;
+        width: 40px;
+        height: 40px;
+        background: url(../../gambar/garis-3.png);
+        background-size: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+    }
+    .menuToggle.active{
+        background: url(../../gambar/silang-1.png);
+        background-size: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .resume .container ul{
+        margin-left: 0;
+        margin-right: 0;
+    }
+    
+    .resume .container .timeline .ciriciri{
+        margin: 0;
+    }
+    .resume .container .timeline .Karakteristik{
+        margin: 0;
+    }
+}

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dist/style-about.css">
+    <title>Kelompok 6 - tentang kita</title>
+</head>
+<body>
+    <header>
+        <a href="coba.html  " class="logo-aboutus">Kelompok 6<span>.</span></a>
+        <div class="menuToggle" onclick="toggleMenu();"></div>
+        <ul class="navigation-aboutus">
+            <li><a href="coba.html">Home</a></li>
+            <li><a href="hikayat.html">Hikayat</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+        </ul>
+    </header>
+    <section class="banner-about" id="banner-about"> 
+        <div class="content">
+            <h2>About Us</h2>
+            <a href="#aboutus" class="btn">Tentang Kita</a>
+        </div>
+    </section>
+   <section class="about" id="aboutus">
+    <div class="container">
+        <div class="box-about">
+            <div class="box1" ><br><br><br><br>
+                <p>
+                    Nama : I Putu Andyan Savero Kusuma Bawana <br>
+                    Umur : 15 Tahun <br>
+                    Tmpt Tgl Lahir : denpasar, 29 september 2007 <br>
+                    Jenis Kelamin : Laki Laki <br>
+                    Kewarganegaraan : Indonesia <br>
+                    Jurusan : Rekayasa Perangkat Lunak 
+                </p>
+            </div>
+            <div class="box1"><br><br><br><br><br>
+                <img src="gambar/savero3.jpeg">
+            </div>
+        </div>
+    </div>
+   </section>
+   <section class="about">
+    <div class="container">
+        <div class="box-about">
+            <div class="box2" ><br><br><br><br><br>
+                <p>
+                    Nama : I Made Kei Putra <br>
+                    Umur : 15 Tahun <br>
+                    Tempat Tanggal Lahir : denpasar, 13 Juli 2006 <br>
+                    Jenis Kelamin : Laki Laki <br>
+                    Kewarganegaraan : Indonesia <br>
+                    Jurusan : Rekayasa Perangkat Lunak
+                </p>
+            </div>
+            <div class="box2"><br><br><br><br><br>
+                <img src="gambar/kei.jpeg">
+            </div>
+        </div>
+    </div>
+   </section>
+   <section class="about" id="aboutus">
+    <div class="container">
+        <div class="box-about">
+            <div class="box3" ><br><br><br><br><br>
+                <p>
+                    Nama : Nyoman Ayu Nadya Paramitha <br>
+                    Umur : 15 Tahun <br>
+                    Tempat Tanggal Lahir : denpasar, 15 maret 2007 <br>
+                    Jenis Kelamin : Perempuan <br>
+                    Kewarganegaraan : Indonesia <br>
+                    Jurusan : Rekayasa Perangkat Lunak
+                </p>
+            </div>
+            <div class="box3"><br><br><br><br><br>
+                <img src="gambar/nadya.jpeg">
+            </div>
+        </div>
+    </div>
+   </section>
+   <section class="about" id="aboutus">
+    <div class="container">
+        <div class="box-about">
+            <div class="box4" ><br><br><br><br><br>
+                <p>
+                    Nama : Putu Bagus Ardy Berata <br>
+                    Umur : 15 Tahun <br>
+                    Tmpt Tgl Lahir : Denpasar, 29 juni 2007 <br>
+                    Jenis Kelamin : Laki Laki <br>
+                    Kewarganegaraan : Indonesia <br>
+                    jurusan : Rekayasa Perangkat Lunak
+                </p>
+            </div>
+            <div class="box4"><br><br><br><br><br>
+                <img src="gambar/adry.jpeg">
+            </div>
+        </div>
+    </div>
+   </section>
+   <section class="about" id="aboutus">
+    <div class="container">
+        <div class="box-about">
+            <div class="box5" ><br><br><br><br><br>
+                <p>
+                    Nama : I Putu Tyagi Taruna <br>
+                    Umur : 15 Tahun <br>
+                    Tmpt Tgl Lahir : Denpasar, 30 Desember 2006 <br>
+                    Jenis Kelamin : Laki Laki <br>
+                    Kewarganegaraan : Indonesia <br>
+                    jurusan : Rekayasa Perangkat Lunak
+                </p>
+            </div>
+            <div class="box5"><br><br><br><br><br>
+                <img src="gambar/tyagi2.jpeg">
+            </div>
+        </div>
+    </div>
+   </section>
+   <section class="about" id="aboutus">
+    <div class="container">
+        <div class="box-about">
+            <div class="box6" ><br><br><br><br><br>
+                <p>
+                    Nama : Reivan Aleindra Darta Putra <br>
+                    Umur : 16 Tahun <br>
+                    Tmpt Tgl Lahir : denpasar, 27 juni 2006 <br>
+                    Jenis Kelamin : Laki Laki <br>
+                    Kewarganegaraan : Indonesia <br>
+                    jurusan : Rekayasa Perangkat Lunak
+                </p>
+            </div>
+            <div class="box6"><br><br><br><br><br>
+                <img src="gambar/repan.jpeg">
+            </div>
+        </div>
+    </div>
+   </section>
+
+   <script type="text/javascript">
+    window.addEventListener('scroll', function(){
+        const header = document.querySelector('header');
+        header.classList.toggle("sticky", window.scrollY > 0);
+    });
+
+    function toggleMenu(){
+        const menuToggle = document.querySelector('.menuToggle');
+        const navigation = document.querySelector('.navigation-aboutus');
+        menuToggle.classList.toggle('active');
+        navigation.classList.toggle('active')
+    }
+</script>
+</body>
+</html>

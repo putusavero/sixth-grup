@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+.banner-about{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #153462;
+    background-size: cover;
+}
+.banner-about .content{
+    max-width: 900px;
+    text-align: center;
+}
+.banner-about .content h2{
+    font-size: 5em;
+    color: aliceblue;
+}
+.btn{
+    font-size: 1em;
+    color: aliceblue;
+    background: #ff0157;
+    display: inline-block;
+    padding: 10px 30px;
+    margin-top: 20px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+}
+.btn:hover{
+    letter-spacing: 4px;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 10000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+}
+
+header.sticky{
+    background: aliceblue;
+    padding: 10px 100px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+header .logo-aboutus{
+    color: aliceblue;
+    font-weight: 700;
+    font-size: 2em;
+    text-decoration: none;
+}
+header.sticky .logo-aboutus{
+    color: #111;
+}
+header .logo-aboutus span{
+    color: #ff0157;
+}
+header .navigation-aboutus{
+    position: relative;
+    display: flex;
+}
+header .navigation-aboutus li{
+    list-style: none;
+    margin-left: 30px;
+}
+header .navigation-aboutus li a{
+    text-decoration: none;
+    color: aliceblue;
+    font-weight: 300;
+}
+header.sticky .navigation-aboutus li a{
+    color: black;
+}
+header .navigation-aboutus li a:hover{
+    color: #ff0157;
+}
+
+
+
+
+
+.about{
+    padding: 40px;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background: aliceblue;
+}
+.about .box-about{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: black;
+}
+
+.about .box-about .box1{
+    padding-right: 10px;
+}
+
+.about .box-about .box1 p{
+    line-height: 2;
+    margin-right: 450px;
+}
+
+.about .box-about .box1 img{
+    border-radius: 10px;
+    height: 600px;
+    width: 400px;
+    margin-right: 10%;
+}
+
+.about .box-about .box2{
+    padding-right: 10px;
+}
+
+.about .box-about .box2 p{
+    line-height: 2;
+    margin-right: 450px;
+}
+
+.about .box-about .box2 img{
+    border-radius: 10px;
+    height: 600px;
+    width: 400px;
+    margin-right: 10%;
+}
+
+.about .box-about .box3{
+    padding-right: 10px;
+}
+
+.about .box-about .box3 p{
+    line-height: 2;
+    margin-right: 430px;
+}
+
+.about .box-about .box3 img{
+    border-radius: 10px;
+    height: 570px;
+    width: 400px;
+    margin-right: 10%;
+}
+
+.about .box-about .box4{
+    padding-right: 10px;
+}
+
+.about .box-about .box4 p{
+    line-height: 2;
+    margin-right: 500px;
+}
+
+.about .box-about .box4 img{
+    border-radius: 10px;
+    height: 600px;
+    width: 400px;
+    margin-right: 10%;
+}
+
+.about .box-about .box5{
+    padding-right: 10px;
+}
+
+.about .box-about .box5 p{
+    line-height: 2;
+    margin-right: 350px;
+}
+
+.about .box-about .box5 img{
+    border-radius: 10px;
+    height: 400px;
+    width: 600px;
+    margin-right: 10%;
+}
+
+.about .box-about .box6{
+    padding-right: 10px;
+}
+
+.about .box-about .box6 p{
+    line-height: 2;
+    margin-right: 500px;
+}
+
+.about .box-about .box6 img{
+    border-radius: 10px;
+    height: 500px;
+    width: 400px;
+    margin-right: 10%;
+}
+
+
+
+
+@media (max-width: 991px){
+    header,
+    header.sticky{
+        padding: 10px 20px;
+    }
+    header .navigation-aboutus{
+        display: none;
+    }
+    header .navigation-aboutus.active{
+        width: 100%;
+        height: calc(100% - 68px);
+        position: fixed;
+        top: 68px;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: aliceblue;
+    }
+    header .navigation-aboutus li{
+        margin-left: 0;
+    }
+    header .navigation-aboutus li a{
+        color: #111;
+        font-size: 1.6em;
+    }
+    .menuToggle{
+        position: relative;
+        width: 40px;
+        height: 40px;
+        background: url(../../gambar/garis-3.png);
+        background-size: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+    }
+    .menuToggle.active{
+        background: url(../../gambar/silang-1.png);
+        background-size: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .about .box-about{
+        flex-direction: column-reverse;
+    }
+    .about .box-about .box1 p{
+        align-items: center;
+        line-height: 2;
+        margin-right: 0;
+    }
+    .about .box-about .box1 img{
+        align-items: center;
+        height: 450px;
+        width: 300px;
+    }
+    .about .box-about .box2 p{
+        line-height: 2;
+        margin-right: 0;
+    }
+    .about .box-about .box2 img{
+        height: 400px;
+        width: 300px;
+    }
+    .about .box-about .box3 p{
+        line-height: 2;
+        margin-right: 0;
+    }
+    .about .box-about .box3 img{
+        height: 400px;
+        width: 300px;
+    }
+    .about .box-about .box4 p{
+        line-height: 2;
+        margin-right: 0;
+    }
+    .about .box-about .box4 img{
+        height: 400px;
+        width: 300px;
+    }
+    .about .box-about .box5 p{
+        line-height: 2;
+        margin-right: 0;
+    }
+    .about .box-about .box5 img{
+        height: 250px;
+        width: 340px;
+    }
+    .about .box-about .box6 p{
+        line-height: 2;
+        margin-right: 0;
+    }
+    .about .box-about .box6 img{
+        height: 400px;
+        width: 300px;
+    }
+}
+
+
+
+    
